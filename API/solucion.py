@@ -6,6 +6,3 @@ response = requests.get(url)
 
 for pokemon in response.json()["results"]:
     print(pokemon["name"])
-
-
-#just test
