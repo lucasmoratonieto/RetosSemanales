@@ -1,17 +1,29 @@
-//  * Escribe un programa que muestre por consola (con un print) los
-//  * números de 1 a 100 (ambos incluidos y con un salto de línea entre
-//  * cada impresión), sustituyendo los siguientes:
-//  * - Múltiplos de 3 por la palabra "fizz".
-//  * - Múltiplos de 5 por la palabra "buzz".
-//  * - Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
-
 // for (number = 1; number <= 100; number++) {
-//   if ((number = 3)) {
-//     console.log("fizz");
-//   } else if ((number = 5)) {
-//     console.log("buzz");
+//   if (Number.isInteger(number / 3) && Number.isInteger(number / 5)) {
+//     console.log("Fizzbuzz");
+//   } else if (Number.isInteger(number / 3)) {
+//     console.log("Fizz");
+//   } else if (Number.isInteger(number / 5)) {
+//     console.log("Buzz");
 //   } else {
 //     console.log(number);
 //   }
 // }
-console.log("Hola");
+
+let number = 1;
+
+function Fizzbuzz() {
+  for (number; number <= 100; number++) {
+    if (number % 3 === 0 && number % 5 == 0) {
+      console.log("Fizzbuzz");
+    } else if (number % 3 === 0) {
+      console.log("Fizz");
+    } else if (number % 5 === 0) {
+      console.log("buzz");
+    } else {
+      console.log(number);
+    }
+  }
+}
+
+Fizzbuzz();
